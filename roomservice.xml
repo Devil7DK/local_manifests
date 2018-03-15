@@ -7,4 +7,9 @@
       <project path="kernel/xiaomi/msm8937" name="HridayHS/android_kernel_xiaomi_msm8937" remote="github" revision="lineage-15.1" />
       <project path="vendor/xiaomi" name="HridayHS/proprietary_vendor_xiaomi" remote="github" revision="lineage-15.1-land" />
       <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-15.1" />
+
+      <project path="scripts" name="dineshthangavel47/scripts" remote="github" revision="master" >
+        <linkfile src="build.sh" dest="build.sh" />
+        <linkfile src="envunch.sh" dest="envunch.sh"" />
+      </project>
 </manifest>
