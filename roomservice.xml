@@ -13,6 +13,6 @@
 
       <project path="scripts" name="dineshthangavel47/scripts" remote="github" revision="master" >
         <linkfile src="build.sh" dest="build.sh" />
-        <linkfile src="envunch.sh" dest="envunch.sh"" />
+        <linkfile src="envunch.sh" dest="envunch.sh" />
       </project>
 </manifest>
