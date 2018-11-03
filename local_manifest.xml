@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project name="Devil7DK/android_device_xiaomi_land" path="device/xiaomi/land" remote="github" revision="xenonhd-p" />
+  <project name="RiteshSaxena/android_kernel_xiaomi_msm8937" path="kernel/xiaomi/msm8937" remote="github" revision="lineage-16.0" />
+  <project name="RiteshSaxena/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="lineage-16.0-land" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
+  <remove-project name="LineageOS/android_external_tinycompress" />
+  <project groups="pdk-qcom,qcom,qcom_audio" name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom/audio" />
+  <project groups="pdk-qcom,qcom,qcom_display" name="LineageOS/android_hardware_qcom_display" path="hardware/qcom/display" />
+  <project groups="pdk-qcom,qcom,qcom_media" name="LineageOS/android_hardware_qcom_media" path="hardware/qcom/media" />
+  <project name="RiteshSaxena/hardware_qcom_audio" path="hardware/qcom/audio-caf/msm8996" remote="github" revision="pie-caf-8996" />
+  <project name="RiteshSaxena/hardware_qcom_display" path="hardware/qcom/display-caf/msm8996" remote="github" revision="pie-caf-8996" />
+  <project name="RiteshSaxena/hardware_qcom_media" path="hardware/qcom/media-caf/msm8996" remote="github" revision="pie-caf-8996" />
+
+  <project name="Devil7DK/android_external_tinycompress" path="external/tinycompresss" remote="github" revision="lineage-16.0" />
+
+  <project name="Devil7DK/scripts" path="myscripts" remote="github" revision="master">
+    <linkfile dest="build.sh" src="build.sh" />
+    <linkfile dest="envunch.sh" src="envunch.sh" />
+  </project>
+
+</manifest>
