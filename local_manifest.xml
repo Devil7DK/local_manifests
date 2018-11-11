@@ -2,8 +2,6 @@
 <manifest>
 
   <remote  name="github-private" fetch="ssh://git@github.com"/>
-  <remove-project name="TeamHorizon/android_packages_apps_XenonOTA" />
-   <project name="Devil7DK/XenonOTA" path="packages/apps/XenonOTA" remote="github-private" revision="p-new"/>
 
   <project name="Devil7DK/android_device_xiaomi_land" path="device/xiaomi/land" remote="github" revision="xenonhd-p" />
   <project name="RiteshSaxena/android_kernel_xiaomi_msm8937" path="kernel/xiaomi/msm8937" remote="github" revision="lineage-16.0" />
