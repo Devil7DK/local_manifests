@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="devil7dk" fetch="ssh://git@github.com/Devil7DK"/>
+
+  <project name="android_device_xiaomi_land" path="device/xiaomi/land" remote="devil7dk" revision="citrus-p" />
+  <project name="android_kernel_xiaomi_msm8937" path="kernel/xiaomi/msm8937" remote="devil7dk" revision="lineage-16.0" />
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="devil7dk" revision="lineage-16.0-land" />
+
+  <remove-project name="hardware_qcom_audio" />
+  <remove-project name="hardware_qcom_display" />
+  <remove-project name="hardware_qcom_media" />
+  <remove-project name="platform/vendor/qcom-opensource/audio" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="vendor_qcom-opensource_display-commonsys-intf" />
+  <remove-project name="vendor_qcom-opensource_fm-commonsys" />
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/msm8937" remote="devil7dk" revision="pie-caf-8996" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display/msm8937" remote="devil7dk" revision="pie-caf-8996" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media/msm8937" remote="devil7dk" revision="pie-caf-8996" />
+
+  <remove-project name="build" />
+  <project name="android_build" path="build/make" remote="devil7dk" revision="citrus-p">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+
+  <project name="scripts" path="myscripts" remote="devil7dk" revision="master">
+    <linkfile dest="build.sh" src="build.sh" />
+    <linkfile dest="envunch.sh" src="envunch.sh" />
+  </project>
+
+</manifest>
