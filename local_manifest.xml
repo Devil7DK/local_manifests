@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="devil7dk" fetch="ssh://git@github.com/Devil7DK"/>
+
+  <!-- Device, Vendor & Kernel Trees -->
+  <project name="android_device_xiaomi_sakura" path="device/xiaomi/sakura" remote="devil7dk" revision="viper-p" />
+  <project name="android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="devil7dk" revision="lineage-16.0" />
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="devil7dk" revision="lineage-16.0" />
+
+  <!-- My Scripts -->
+  <project name="scripts" path="myscripts" remote="devil7dk" revision="master">
+    <linkfile dest="build.sh" src="build.sh" />
+    <linkfile dest="envunch.sh" src="envunch.sh" />
+  </project>
+
+</manifest>
