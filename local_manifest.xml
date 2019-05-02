@@ -8,6 +8,8 @@
   <project name="android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="devil7dk" revision="lineage-16.0" />
   <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="devil7dk" revision="lineage-16.0" />
 
+  <project name="android_vendor_ambientmusic" path="vendor/ambientmusic" remote="devil7dk" revision="pie" />
+
   <!-- My Scripts -->
   <project name="scripts" path="myscripts" remote="devil7dk" revision="master">
     <linkfile dest="build.sh" src="build.sh" />
