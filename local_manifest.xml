@@ -18,4 +18,10 @@
   <!-- Qualcomm -->
   <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="blobs" revision="quartz" />
 
+  <!-- AOSPA -->
+  <remove-project name="AOSPA/android_vendor_pa" />
+  <project name="android_vendor_pa" path="vendor/pa" remote="devil7dk" revision="quartz">
+    <copyfile src="build.sh" dest="rom-build.sh" />
+  </project>
+
 </manifest>
