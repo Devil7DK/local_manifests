@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="devil7dk" fetch="ssh://git@github.com/Devil7DK"/>
+  <remote  name="hals" fetch="ssh://git@github.com/AOSPA"/>
+
+  <!-- Device, Vendor & Kernel Trees -->
+  <project name="android_device_xiaomi_sakura" path="device/xiaomi/sakura" remote="devil7dk" revision="aospa-q" />
+  <project name="android_device_xiaomi_msm8953-common" path="device/xiaomi/msm8953-common" remote="devil7dk" revision="aospa-q" />
+  <project name="android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="devil7dk" revision="lineage-17.1" />
+  <project name="proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="devil7dk" revision="lineage-17.1" />
+
+  <!-- HALs -->
+  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="hals" revision="quartz-89xx" />
+  <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="hals" revision="quartz-89xx" />
+  <project name="android_hardware_qcom_media" path="hardware/qcom/media" remote="hals" revision="quartz-89xx" />
+
+  <!-- Qualcomm -->
+  <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="blobs" revision="quartz" />
+
+</manifest>
